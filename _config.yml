@@ -1,0 +1,12 @@
+name: Ben Demaree
+markdown: redcarpet
+pygments: true
+gems: [jekyll-assets]
+permalink: pretty
+assets:
+    css_compressor: sass
+    sources:
+        - _assets/images
+        - _assets/javascripts
+        - _assets/stylesheets
+        - _assets/vendor/font-awesome/fonts

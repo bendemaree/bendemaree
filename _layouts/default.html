@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>{{ page.title }}</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+
+        {% stylesheet main %}
+    </head>
+    <body>
+        <header class="header">
+            <div class="header__container">
+                <a class="header__target" href="/">
+                    <div class="header__mark"></div>
+                    Ben Demaree
+                </a>
+                <nav class="nav">
+                    <ul class="nav--horizontal">
+                        <li class="nav__item"><a href="/about">About</a>
+                        <li class="nav__item"><a href="/work">Work</a>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        {{ content }}
+
+        <footer class="footer">
+            <div class="footer__container">
+                 &copy; 2014 Ben Demaree. Featuring Source Sans Pro &amp; EB Garamond.
+                <span class="footer__meta">
+                    <a target="_" href="http://twitter.com/bendemaree"><i class="fa fa-twitter"></i></a>
+                    <a target="_" href="http://github.com/bendemaree"><i class="fa fa-github"></i></a>
+                    <a target="_" href="http://linkedin.com/in/bendemaree"><i class="fa fa-linkedin"></i></a>
+                    <a href="mailto:bendemaree@gmail.com"><i class="fa fa-envelope-o"></i></a>
+                </span>
+            </div>
+        </footer>
+
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='//www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X');ga('send','pageview');
+        </script>
+    </body>
+</html>
