@@ -2,7 +2,7 @@
   "name": "bendemaree",
   "version": "0.0.0",
   "dependencies": {
-    "font-awesome": "~4.1.0",
+    "font-awesome": "~4.1.0"
   },
   "devDependencies": {}
 }
