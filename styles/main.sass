@@ -76,12 +76,15 @@
       display: block
 
   a
+    @include transition(border-bottom ease-in-out 0.25s)
+    border-bottom: 1px solid shade(white, 5%)
     color: black
     margin-right: 10px
     padding: 10px 15px
     text-decoration: none
 
   a:hover
+    @include transition(border-bottom ease-in-out 0.25s)
     border-bottom: 1px solid shade(white, 50%)
     color: black
 
@@ -99,18 +102,44 @@
     margin: 0 30px
 
 a
+  @include transition(color ease-in-out 0.25s)
   color: black
+  text-decoration: none
+
+  h2
+    display: table
+
+  h2:after
+    @include transition(border-bottom-color ease-in-out 0.25s)
+    border-bottom: 1px solid black
+    content: ' '
+    display: block
+    margin-top: -0.2em
+    width: 100%
 
 a:visited
+  @include transition(color ease-in-out 0.25s)
   color: tint(black, 40%)
 
+  h2:after
+    @include transition(border-bottom-color ease-in-out 0.25s)
+    border-bottom-color: tint(black, 40%)
+    opacity: 0
+
 a:hover
+  @include transition(color ease-in-out 0.25s)
   color: rgb(241, 92, 94)
+
+  h2:after
+    @include transition(border-bottom-color ease-in-out 0.25s)
+    border-bottom-color: rgb(241, 92, 94)
+    opacity: 1
 
 .body--plain
   h2
     font-family: 'sourcesanspro', sans-serif
     font-size: 0.8em
+    font-weight: 300
     margin: 0
   p
     font-family: 'sourcesanspro', sans-serif
